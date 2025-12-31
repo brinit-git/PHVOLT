@@ -15,7 +15,6 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/cropped-Logo.png">
     <meta name="robots" content="INDEX,FOLLOW">
-
     <link rel="icon" type="image/png" href="assets/images/cropped-Logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -32,213 +31,181 @@
 </head>
 
 <body>
+<!-- navbar -->
+    <div id="navbar"></div>
 
-
-    <header class="container-fluid">
-        <nav class="navbar section-content">
-            <a href="/" class="nav-logo">
-                <img src="assets/images/Logo-PNG.png" alt="Logo" class="img-fluid logo">
-            </a>
-            <ul class="nav-menu">
-                <button id="menu-close-button" class="fas fa-times"></button>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/about" class="nav-link">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/blogs" class="nav-link">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/services" class="nav-link">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/contact" class="nav-link">CONTACT</a>
-                </li>
-            </ul>
-            <button id="menu-open-button" class="fas fa-bars"></button>
-        </nav>
-    </header>
-
-    <section class="hero-banner">
+    <!-- Full-width hero banner (matches other pages) -->
+    <section class="page-hero">
         <div class="hero-overlay">
-            <div class="container text-center text-white">
-                <h1 class="hero-title">CONTACT</h1>
-                <nav class="breadcrumb-nav">
-                    <a href="/" class="breadcrumb-link">HOME</a>
-                    <span class="breadcrumb-divider">›</span>
-                    <span class="breadcrumb-current">CONTACT</span>
-                </nav>
-            </div>
-        </div>
-    </section>
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <!-- Left Contact Info -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <p class="text-secondary text-center">Contact Us</p>
-                    <h2 class="fw-bold mb-3">
-                        Get <span class="text-warning">In</span> Touch
-                    </h2>
-                    <p class="text-muted mb-4">Are you ready to take your first step towards a more sustainable and
-                        energy-efficient future?</p>
-
-                    <p class="mb-2 bi bi-envelope"> hi@mentary.com</p>
-                    <p class="mb-2 bi bi-geo-alt"> Nadapuram Road, Vadakara</p>
-                    <p class="mb-4 bi bi-telephone"> +91 80751 79303</p>
-
-                    <!-- Inner Image -->
-                    <div class="rounded-4 overflow-hidden">
-                        <img src="assets/images/contact-1.jpg" alt="Mini Solar Model" class="img-fluid w-100 rounded ">
-                    </div>
-                </div>
-
-                <!-- Right Image -->
-                <div class="col-lg-6">
-                    <img src="assets/images/contact-2.jpeg" alt="Solar Panels"
-                        class="contact-pic img-fluid w-100 rounded-4">
-                </div>
-
+            <div class="container text-center text-white py-5 contact-text">
+                <h1 class="display-4 fw-bold">Contact</h1>
+                
             </div>
         </div>
     </section>
 
-    <section class="contact-sec py-5">
-        <div class="container">
-            <p class="text-secondary text-center">Frequently Asked Questions</p>
-            <h2 class="fw-bold mb-5">
-                Everything You Need To Know About Our <br class="d-none d-md-block" />
-                Services And Solutions
-            </h2>
-
-            <div class="row align-items-start">
-
-                <!-- Image Column -->
-                <div class="col-lg-6  mb-4 mb-lg-0">
-                    <img src="assets/images/contact-3.jpeg" alt="Solar Panel"
-                        class="contact-img img-fluid rounded-4 h-25">
-                </div>
-
-                <!-- Support Content -->
-                <div class="col-lg-6 ps-5">
-                    <h4 class="title fw-bold text-success">Need Other Support?</h4>
-                    <hr>
-
-                    <div class="mb-4">
-                        <h5 class="sub-title fw-bold text-success">Technical Support</h5>
-                        <ul class="custom-list text-muted">
-                            <li>Installation and Maintenance</li>
-                            <li>Technical Troubleshooting</li>
-                            <li>Upgrade and Replacement</li>
-                            <li>Product Training</li>
-                            <li>Warranty and Guarantee</li>
-                            <li>Service Agreements</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h5 class="sub-title fw-bold text-success">Technical Support</h5>
-                        <ul class="custom-list text-muted">
-                            <li>Sales and Consultation</li>
-                            <li>Order Processing and Tracking</li>
-                            <li>Billing and Invoicing</li>
-                            <li>Customer Feedback and Surveys</li>
-                            <li>Technical Documentation</li>
-                            <li>Emergency Response and Repair.</li>
-                        </ul>
+    <!-- Contact content -->
+     <section class="container cta-section">
+        <div class="cta-content">
+            <div class="row g-4 align-items-stretch mt-1">
+                <!-- Info cards -->
+                <div class="col-lg-5">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="icon"><i class="bi bi-telephone"></i></div>
+                            <div class="info">
+                                <div class="label">Call us</div>
+                                <a href="tel:+918075179303" class="value">+91 80751 79303</a>
+                                <div class="hint">Mon - Sat, 9:00 AM - 6:00 PM</div>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon"><i class="bi bi-envelope"></i></div>
+                            <div class="info">
+                                <div class="label">Email</div>
+                                <a href="mailto:hi@mentary.com" class="value">hi@mentary.com</a>
+                                <div class="hint">We typically reply within 1 business day</div>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon"><i class="bi bi-geo-alt"></i></div>
+                            <div class="info">
+                                <div class="label">Address</div>
+                                <div class="value">Nadapuram Road, Vadakara</div>
+                                <div class="hint">Kerala, India</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Compact contact form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-card p-4 p-md-5 rounded-4 bg-white shadow-sm">
+                        <h3 class="mb-2 text-dark">Send us a message</h3>
+                        <p class="text-muted small mb-4">Tell us a bit about your project or question.</p>
+
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-dark">Full Name</label>
+                                    <div class="input-with-icon">
+                                        <i class="bi bi-person"></i>
+                                        <input type="text" name="name" class="form-control" placeholder="John Doe"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-dark">Email</label>
+                                    <div class="input-with-icon">
+                                        <i class="bi bi-envelope"></i>
+                                        <input type="email" name="email" class="form-control"
+                                            placeholder="you@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-dark">Phone</label>
+                                    <div class="input-with-icon">
+                                        <i class="bi bi-phone"></i>
+                                        <input type="tel" name="phone" class="form-control"
+                                            placeholder="+91 98765 43210">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-dark">Message</label>
+                                    <div class="textarea-with-icon">
+                                        <i class="bi bi-chat-dots"></i>
+                                        <textarea name="message" class="form-control"
+                                            placeholder="Share a few details..." required></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3 mt-4">
+                                <button type="submit" class="btn btn-custom">
+                                    Send Message <i class="ms-2 bi bi-send-fill"></i>
+                                </button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal FAQ Section -->
+    <section class="faq-minimal-section py-5 bg-light-subtle">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold">Frequently Asked Questions</h2>
+                        <p class="text-muted">Common questions about our services</p>
+                    </div>
+                    
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <div class="accordion-item bg-transparent border-bottom mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How much does a solar installation cost?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Costs vary based on system size and components. We offer free consultations to provide accurate estimates tailored to your needs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-bottom mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer maintenance services?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Yes, we provide comprehensive maintenance packages including cleaning, monitoring, and technical troubleshooting to ensure optimal performance.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-bottom mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What is the warranty period?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Our solar panels typically come with a 25-year performance warranty, and inverters usually have a 5-10 year warranty.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-bottom mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    How long does installation take?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Residential installations usually take 1-3 days. Commercial projects may take longer depending on the scale and complexity.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
 
-
-
-
-
-    <section class=" container-fluid foot mt-5 pt-5">
-        <!-- Top Section: Need Solution + Contact Button -->
-        <section class="footer-intro">
-            <div class="container">
-                <div class="row align-items-center gy-4">
-                    <div class="col-md-5">
-                        <h2>NEED SOLUTION <span>FROM US</span></h2>
-                        <p>
-                        <p>Discover the expertise of Protonvolt Energy in delivering cutting-edge solar solutions
-                            tailored for homes, businesses, and industries. Let us power your future with sustainable
-                            energy.</p>
-                        </p>
-                    </div>
-                    <div class="col-md-1 d-none d-md-block">
-                        <div class="vertical-divider"></div>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <a href="/contact" class="contact-now-btn">Contact Now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer Section -->
-        <section class="footer-main mt-5 pt-5">
-            <div class="container">
-                <div class="row align-items-start gy-4">
-                    <!-- Logo & Description -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-logo mb-3">
-                            <img src="assets/images/Logo-PNG.png" alt="Logo" />
-                        </div>
-                        <p class="footer-description">
-                            Protonvolt Energy is committed to transforming energy usage through advanced solar
-                            technologies. From installation to maintenance, we provide end-to-end sustainable solutions
-                            that drive efficiency and reduce costs.
-
-                        </p>
-                    </div>
-
-                    <!-- Head Office -->
-                    <div class="col-lg-4 col-md-6 mt-5 pt-5 text-center ">
-                        <div class="footer-heading">Head Office</div>
-                        <div class="footer-contact">
-                            <p><i class="bi bi-geo-alt"></i> Nadapuram Road, Vadakara</p>
-                            <p><i class="bi bi-telephone"></i>+91 80751 79303</p>
-                            <p><i class="bi bi-envelope"></i><a
-                                    href="mailto:architectsadora@gmail.com">hi@mentary.com</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Pages -->
-                     <div class="col-lg-4 col-md-12 mt-5 pt-5 text-center">
-                        <div class="footer-heading">Pages</div>
-                        <div class="footer-pages">
-                            <a href="/">Home</a>
-                            <a href="/about">About Us</a>
-                            <a href="/services">Services</a>
-                            <a href="/blogs">Blog</a>
-                            <a href="/contact">Contact</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bottom Line -->
-                <div class="footer-bottom mt-4">
-                    <div class="row">
-                        <div class="col-md-6 text-md-start text-center">
-                            Copyright © 2024 Photonvolt Energy. All rights reserved.
-                        </div>
-                        <div class="brinit col-md-6 text-md-end text-center">Website Designed By
-                              <a href="#" target="_blank">PRception</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
+   <!-- footer -->
+    <div id="footer"></div>
 
 
 
@@ -255,6 +222,27 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/transition.js"></script>
 </body>
+ <button id="goToTop" aria-label="Go to top" title="Go to top">
+                <i class="bi bi-arrow-up-short" style="font-size:1.5rem;"></i>
+        </button>
 
+        <script>
+        (function(){
+            const btn = document.getElementById('goToTop');
+            if(!btn) return;
+            const toggleVisibility = () => {
+                if(window.scrollY > 250) btn.classList.add('show');
+                else btn.classList.remove('show');
+            };
+            window.addEventListener('scroll', toggleVisibility, {passive:true});
+            btn.addEventListener('click', () => {
+                window.scrollTo({top:0, behavior:'smooth'});
+            });
+            // initial check
+            toggleVisibility();
+        })();
+        </script>
+
+</body>
 
 </html>

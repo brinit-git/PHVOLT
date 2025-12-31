@@ -180,19 +180,7 @@ gsap.from(".journey-text p, .journey-text h2, .journey .stat-box", {
   ease: "power2.out",
 });
 
-// Animate CTA section
-gsap.from(".cta-section .cta-content div, .cta-section .cta-content a", {
-  scrollTrigger: {
-    trigger: ".cta-section",
-    start: "top 85%",
-    toggleActions: "play none none none",
-  },
-  y: 30,
-  opacity: 0,
-  duration: 0.8,
-  stagger: 0.15,
-  ease: "power2.out",
-});
+
 
 // about html transitions
 
@@ -218,7 +206,7 @@ animateSection(".about-section");
 animateSection(".counter-section");
 animateSection(".experience-section");
 animateSection(".specialist");
-animateSection(".cta-section");
+// animateSection(".cta-section"); // handled above with a tuned ScrollTrigger
 
 // contact html
 

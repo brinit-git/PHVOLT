@@ -1,0 +1,117 @@
+
+    <header>
+        <nav class="navbar section-content container-fluid" aria-label="Main navigation">
+            <div class="container">
+                <div>
+                    <a href="index.html" class="nav-logo">
+                        <img src="assets/images/Logo-PNG.png" alt="Logo" class="img-fluid logo">
+                    </a>
+                </div>
+                <div>
+                    <!-- added id and aria-hidden default -->
+                    <ul id="nav-menu" class="nav-menu" aria-hidden="true">
+                        <!-- close button kept inside menu for mobile; labelled for accessibility -->
+                        <button id="menu-close-button" class="fas fa-times" aria-label="Close menu" aria-hidden="true"></button>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blogs.html" class="nav-link">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">CONTACT</a>
+                        </li>
+                    </ul>
+
+                    <!-- open button: has aria-controls and expanded state -->
+                    <button id="menu-open-button" class="fas fa-bars" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu"></button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Inline script: small, self-contained menu toggle for keyboard & mobile accessibility -->
+        <script>
+            (function(){
+                function qs(id){ return document.getElementById(id); }
+                var openBtn = qs('menu-open-button');
+                var closeBtn = qs('menu-close-button');
+                var navMenu = qs('nav-menu');
+                if(!openBtn || !closeBtn || !navMenu) return;
+
+                function showMenu(){
+                    navMenu.classList.add('open');
+                    navMenu.setAttribute('aria-hidden','false');
+                    openBtn.setAttribute('aria-expanded','true');
+                    closeBtn.setAttribute('aria-hidden','false');
+                    closeBtn.style.display = 'inline-block';
+                    openBtn.style.display = 'none';
+                    // move focus into menu for keyboard users
+                    closeBtn.focus();
+                }
+
+                function hideMenu(){
+                    navMenu.classList.remove('open');
+                    navMenu.setAttribute('aria-hidden','true');
+                    openBtn.setAttribute('aria-expanded','false');
+                    closeBtn.setAttribute('aria-hidden','true');
+                    closeBtn.style.display = 'none';
+                    openBtn.style.display = 'inline-block';
+                    openBtn.focus();
+                }
+
+                // initial state depending on viewport
+                function setInitial(){
+                    if(window.innerWidth <= 768){
+                        navMenu.setAttribute('aria-hidden','true');
+                        closeBtn.style.display = 'none';
+                        openBtn.style.display = 'inline-block';
+                        openBtn.setAttribute('aria-expanded','false');
+                    } else {
+                        navMenu.setAttribute('aria-hidden','false');
+                        closeBtn.style.display = 'none';
+                        openBtn.style.display = 'none';
+                    }
+                }
+
+                // Wire up events
+                openBtn.addEventListener('click', function(e){ e.preventDefault(); showMenu(); });
+                closeBtn.addEventListener('click', function(e){ e.preventDefault(); hideMenu(); });
+
+                // Close menu when a link is clicked (mobile)
+                var links = navMenu.querySelectorAll('a.nav-link');
+                Array.prototype.forEach.call(links, function(a){
+                    a.addEventListener('click', function(){ if(window.innerWidth <= 768) hideMenu(); });
+                });
+
+                // Escape closes the menu
+                document.addEventListener('keydown', function(e){
+                    if(e.key === 'Escape' && navMenu.classList.contains('open')){
+                        hideMenu();
+                    }
+                });
+
+                // On resize, ensure menu state is correct
+                window.addEventListener('resize', function(){
+                    if(window.innerWidth > 768){
+                        navMenu.classList.remove('open');
+                        navMenu.setAttribute('aria-hidden','false');
+                        openBtn.style.display = 'none';
+                        closeBtn.style.display = 'none';
+                        openBtn.setAttribute('aria-expanded','false');
+                    } else {
+                        navMenu.setAttribute('aria-hidden','true');
+                        openBtn.style.display = 'inline-block';
+                    }
+                });
+
+                // run initial setup
+                setInitial();
+            })();
+        </script>
+    </header>
