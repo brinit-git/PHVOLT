@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <!-- Meta Title and Description -->
     <title>Blogs - Photonvolt Energy</title>
-    <meta name="description" content="Explore expert solar energy tips, news, and insights on Photonvolt Energy’s blog. Stay updated with Kozhikode’s best solar installation company’s latest trends and guides.">
+    <meta name="description"
+        content="Explore expert solar energy tips, news, and insights on Photonvolt Energy's blog. Stay updated with Kozhikode's best solar installation company's latest trends and guides.">
     <link rel="canonical" href="https://photonvoltenergy.com/blogs">
     <!-- Og Title and Description -->
     <meta property="og:title" content="Blogs - Photonvolt Energy">
-    <meta property="og:description" content="Stay informed with Photonvolt Energy’s solar blog, featuring the newest trends, expert tips, and advice from Kozhikode’s leading solar installation company.">
+    <meta property="og:description"
+        content="Stay informed with Photonvolt Energy's solar blog, featuring the newest trends, expert tips, and advice from Kozhikode's leading solar installation company.">
     <meta property="og:url" content="https://photonvoltenergy.com/blogs">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/cropped-Logo.png">
@@ -28,11 +30,73 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "CollectionPage",
+                "@id": "https://photonvoltenergy.com/blogs.html#webpage",
+                "url": "https://photonvoltenergy.com/blogs.html",
+                "name": "Blogs - Photonvolt Energy",
+                "description": "Explore expert solar energy tips, news, and insights on Photonvolt Energy's blog. Stay updated with Kozhikode's best solar installation company's latest trends and guides.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://photonvoltenergy.com/#website"
+                }
+            },
+            {
+                "@type": "ItemList",
+                "@id": "https://photonvoltenergy.com/blogs.html#bloglist",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "url": "https://photonvoltenergy.com/Harnessing%20Solar.html",
+                        "name": "Harnessing Solar Energy In Kerala"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "url": "https://photonvoltenergy.com/OnGrid%20Solar.html",
+                        "name": "On-Grid Solar Solutions With Photonvolt Energy"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "url": "https://photonvoltenergy.com/Hybrid%20Solar.html",
+                        "name": "Harnessing The Best Of Both Worlds: Hybrid Solar Solutions With Photonvolt Energy"
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://photonvoltenergy.com/blogs.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://photonvoltenergy.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blogs",
+                        "item": "https://photonvoltenergy.com/blogs.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
 </head>
 
 <body>
 
-<!-- navbar -->
+    <!-- navbar -->
 
     <div id="navbar"></div>
 
@@ -42,7 +106,7 @@
                 <h1 class="hero-title">BLOGS</h1>
                 <nav class="breadcrumb-nav">
                     <a href="index.html" class="breadcrumb-link">HOME</a>
-                    <span class="breadcrumb-divider">›</span>
+                    <span class="breadcrumb-divider">></span>
                     <span class="breadcrumb-current">BLOGS</span>
                 </nav>
             </div>
@@ -115,26 +179,26 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/transition.js"></script>
 </body>
- <button id="goToTop" aria-label="Go to top" title="Go to top">
-                <i class="bi bi-arrow-up-short" style="font-size:1.5rem;"></i>
-        </button>
+<button id="goToTop" aria-label="Go to top" title="Go to top">
+    <i class="bi bi-arrow-up-short" style="font-size:1.5rem;"></i>
+</button>
 
-        <script>
-        (function(){
-            const btn = document.getElementById('goToTop');
-            if(!btn) return;
-            const toggleVisibility = () => {
-                if(window.scrollY > 250) btn.classList.add('show');
-                else btn.classList.remove('show');
-            };
-            window.addEventListener('scroll', toggleVisibility, {passive:true});
-            btn.addEventListener('click', () => {
-                window.scrollTo({top:0, behavior:'smooth'});
-            });
-            // initial check
-            toggleVisibility();
-        })();
-        </script>
+<script>
+    (function () {
+        const btn = document.getElementById('goToTop');
+        if (!btn) return;
+        const toggleVisibility = () => {
+            if (window.scrollY > 250) btn.classList.add('show');
+            else btn.classList.remove('show');
+        };
+        window.addEventListener('scroll', toggleVisibility, { passive: true });
+        btn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        // initial check
+        toggleVisibility();
+    })();
+</script>
 
 </body>
 

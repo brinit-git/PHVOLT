@@ -1,0 +1,33 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Developer & Designer: Photonvolt Energy Development Team
+    Location: Nadapuram Road, Vadakara, Kerala, India
+    Contact: hi@mentary.com
+    Phone: +91 80751 79303
+
+# THANKS
+
+    To all our customers who trust us with their solar energy needs
+    To the open-source community for amazing tools and libraries
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
+    Bootstrap 5.3.3
+    GSAP (GreenSock Animation Platform)
+    Font Awesome Icons
+    Bootstrap Icons
+    Google Fonts (Proza Libre, Arsenal, Raleway, Montserrat, Open Sans)
+    
+# SITE
+
+    Last update: 2026/02/17
+    Standards: HTML5, CSS3
+    Components: Bootstrap, GSAP, Three.js
+    Software: Visual Studio Code
+    Language: English
+    Doctype: HTML5
+    IDE: Visual Studio Code

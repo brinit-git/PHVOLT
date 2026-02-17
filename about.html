@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <!-- Meta Title and Description -->
-    <title>About Photonvolt Energy – Leading Solar Company in Kozhikode</title>
-    <meta name="description" content="Discover Photonvolt Energy, Kozhikode’s trusted solar installation company. Learn about our mission, expertise, and commitment to delivering quality solar solutions.">
+    <title>About Photonvolt Energy - Leading Solar Company in Kozhikode</title>
+    <meta name="description"
+        content="Discover Photonvolt Energy, Kozhikode's trusted solar installation company. Learn about our mission, expertise, and commitment to delivering quality solar solutions.">
     <link rel="canonical" href="https://photonvoltenergy.com/about">
     <!-- Og Title and Description -->
-    <meta property="og:title" content="About Photonvolt Energy – Kozhikode’s Solar Experts ">
-    <meta property="og:description" content="Get to know Photonvolt Energy, a top solar installation provider in Kozhikode offering on-grid, hybrid & standalone systems with a focus on quality and customer satisfaction.">
+    <meta property="og:title" content="About Photonvolt Energy - Kozhikode's Solar Experts ">
+    <meta property="og:description"
+        content="Get to know Photonvolt Energy, a top solar installation provider in Kozhikode offering on-grid, hybrid & standalone systems with a focus on quality and customer satisfaction.">
     <meta property="og:url" content="https://photonvoltenergy.com/about">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/cropped-Logo.png">
@@ -28,6 +30,56 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "AboutPage",
+                "@id": "https://photonvoltenergy.com/about.html#webpage",
+                "url": "https://photonvoltenergy.com/about.html",
+                "name": "About Photonvolt Energy - Leading Solar Company in Kozhikode",
+                "description": "Discover Photonvolt Energy, Kozhikode's trusted solar installation company. Learn about our mission, expertise, and commitment to delivering quality solar solutions.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://photonvoltenergy.com/#website"
+                },
+                "about": {
+                    "@type": "Organization",
+                    "@id": "https://photonvoltenergy.com/#organization",
+                    "name": "Photonvolt Energy",
+                    "description": "Photonvolt Energy is a leading provider of innovative solar solutions dedicated to promoting sustainability. With over a decade of experience, our expert team specializes in on-grid, hybrid, and standalone systems.",
+                    "foundingDate": "2009",
+                    "numberOfEmployees": {
+                        "@type": "QuantitativeValue",
+                        "value": "20"
+                    },
+                    "slogan": "Empowering a Sustainable Future"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://photonvoltenergy.com/about.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://photonvoltenergy.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "About",
+                        "item": "https://photonvoltenergy.com/about.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -41,7 +93,7 @@
                 <h1 class="hero-title">ABOUT US</h1>
                 <nav class="breadcrumb-nav">
                     <a href="index.html" class="breadcrumb-link">HOME</a>
-                    <span class="breadcrumb-divider">›</span>
+                    <span class="breadcrumb-divider">></span>
                     <span class="breadcrumb-current">ABOUT</span>
                 </nav>
             </div>
@@ -185,28 +237,29 @@
 
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
-     <script src="assets/js/transition.js"></script>
+    <script src="assets/js/transition.js"></script>
 </body>
- <button id="goToTop" aria-label="Go to top" title="Go to top">
-                <i class="bi bi-arrow-up-short" style="font-size:1.5rem;"></i>
-        </button>
+<button id="goToTop" aria-label="Go to top" title="Go to top">
+    <i class="bi bi-arrow-up-short" style="font-size:1.5rem;"></i>
+</button>
 
-        <script>
-        (function(){
-            const btn = document.getElementById('goToTop');
-            if(!btn) return;
-            const toggleVisibility = () => {
-                if(window.scrollY > 250) btn.classList.add('show');
-                else btn.classList.remove('show');
-            };
-            window.addEventListener('scroll', toggleVisibility, {passive:true});
-            btn.addEventListener('click', () => {
-                window.scrollTo({top:0, behavior:'smooth'});
-            });
-            // initial check
-            toggleVisibility();
-        })();
-        </script>
+<script>
+    (function () {
+        const btn = document.getElementById('goToTop');
+        if (!btn) return;
+        const toggleVisibility = () => {
+            if (window.scrollY > 250) btn.classList.add('show');
+            else btn.classList.remove('show');
+        };
+        window.addEventListener('scroll', toggleVisibility, { passive: true });
+        btn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        // initial check
+        toggleVisibility();
+    })();
+</script>
 
 </body>
+
 </html>
